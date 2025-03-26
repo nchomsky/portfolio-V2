@@ -1,7 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // Enable Static Export for SPA
+  // output: 'export',
 };
 
 export default nextConfig;
