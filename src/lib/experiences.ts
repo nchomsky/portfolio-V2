@@ -29,7 +29,7 @@ const apple: Experience = {
 const pgDev: Experience = {
     company: 'Prometheus Group',
     position: 'Software Developer',
-    startDate: 'July 2023',
+    startDate: 'July 2022',
     endDate: 'April 2023',
     summary: `I worked with a team of 14 developers to build an enterprise application consisting of four separate applications that integrate with SAP and Primavera P6. 
                 In each release cycle, I complete approximately 18% of the total tickets. I implemented Ag-Grid React to efficiently display and organize data synced from the Primavera API and SAP. 
