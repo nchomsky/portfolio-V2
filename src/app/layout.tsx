@@ -14,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${openSans.className} antialiased`}>
-      <body>
+      <body suppressHydrationWarning>
         {children}
       </body>
     </html>
