@@ -4,7 +4,7 @@ import Tag from './Tag';
 const ExperienceCard = ({ experience } : { experience : Experience }) => {
   
     return (
-            <div className="group md:flex lg:p-8 rounded-lg lg:hover:shadow-lg lg:hover:bg-comp-bg">
+            <div className="group mt-2 md:flex lg:p-8 rounded-lg lg:hover:inset-shadow-md lg:hover:bg-comp-bg/50">
                 <p className="text-xs text-muted font-semibold lg:w-1/4">{experience.startDate} - {experience.endDate}</p>
                 <div className="lg:w-3/4">
                     <h3 className=" font-bold antialiased lg:group-hover:text-accent">{experience.company} - {experience.position}</h3>

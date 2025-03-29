@@ -1,4 +1,5 @@
 import ExperienceCard from "@/components/ExperienceCard";
+import Particles from "@/components/Particles";
 import { experiences } from "@/lib/experiences";
 
 const testText = `I’m a developer passionate about creating software that is both functional and beautiful. I have experience working with a variety of technologies and languages, including JavaScript, TypeScript, React, Node.js, and Python. I have a strong foundation in computer science and software engineering principles, and I’m always looking to learn new things and improve my skills.
@@ -9,6 +10,7 @@ const testText = `I’m a developer passionate about creating software that is b
 export default function Home() {
   return (
     <div className="flex flex-col lg:flex-row">
+      <Particles quantity={300} className="absolute -z-10 inset-0"/>
       {/* Left Side */}
       <div className="lg:h-screen lg:sticky lg:top-0 lg:w-1/2">
         <div className="m-10 lg:m-20">
