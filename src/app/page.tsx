@@ -8,21 +8,24 @@ const testText = `I’m a developer passionate about creating software that is b
 
 export default function Home() {
   return (
-    <div className="flex flex-col h-screen lg:flex-row ">
-      <div className="h-screen lg:sticky lg:top-0 lg:w-1/2">
+    <div className="flex flex-col lg:flex-row">
+      {/* Left Side */}
+      <div className="lg:h-screen lg:sticky lg:top-0 lg:w-1/2">
         <div className="m-10 lg:m-20">
           <h1 className="text-5xl font-bold lg:text-6xl">Noah Chomsky</h1>
           <h2 className="text-2xl lg:text-3xl">Software Developer</h2>
         </div>
       </div>
-      <div className="h-screen lg:overflow-y-auto lg:w-1/2">
-        <section id="about" className="lg:mr-25">
-          <div className="mt-10 lg:mt-20 my-4 mx-8">
+      {/* Right Side */}
+      <div className="lg:min-h-screen lg:overflow-y-auto lg:w-1/2">
+        <section id="about" className="lg:mr-4">
+        <h2 className="ml-8 text-lg lg:hidden">About</h2>
+          <div className="mt-10 lg:mt-20 my-4 mx-8 text-secondary">
             <p>{testText}</p>
           </div>
         </section>
-        <section id="experiences" className="lg:mr-25">
-          <h2 className="mx-8 text-lg lg:hidden">Experience</h2>
+        <section id="experiences" className="lg:mr-4">
+          <h2 className="ml-8 text-lg lg:hidden">Experience</h2>
           {experiences.map((experience, index )=> (
             <ExperienceCard key={index} experience={experience} />
           ))}
