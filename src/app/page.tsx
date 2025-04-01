@@ -21,15 +21,16 @@ const testText = `I’m a developer passionate about creating software that is
 
 export default function Home() {
   return (
-    <div className="flex flex-col lg:flex-row mx-auto max-w-screen-xl px-6 md:px-12 my-16">
+    <div className="flex flex-col lg:flex-row lg:gap-4 mx-auto max-w-screen-xl lg:py-0 py-12 md:px-4">
       <Particles quantity={300} className="absolute -z-10 inset-0"/>
       {/* Left Side */}
-      <header className="lg:h-screen lg:sticky lg:top-0 lg:w-[45%]">
-        <div className="lg:my-20">
-          <h1 className="text-4xl mb-2 font-bold lg:text-5xl">Noah Chomsky</h1>
-          <h2 className="mb-4 text-2xl text-subtle lg:text-3xl ">Software Developer</h2>
+      <header className="lg:h-screen lg:py-24 lg:sticky lg:top-0 lg:flex lg:flex-col lg:w-[45%]">
+          <div>
+            <h1 className="text-4xl mb-2 font-bold lg:text-6xl">Noah Chomsky</h1>
+            <h2 className="mb-4 text-2xl text-subtle lg:text-3xl ">Software Developer</h2>
+          </div>
           {/* Add LinkedIn, GitHub, and Resume Icons */}
-          <ul aria-label="Social Media List" className="flex mb-20">
+          <ul aria-label="Social Media List" className="flex">
             <li className="mr-4 shrink-0">
               <a href="https://www.linkedin.com/in/nchomsky/" target="_blank">
                 <LinkedInIcon className="fill-subtle hover:fill-secondary hover:cursor-pointer transition duration-300 ease-in-out hover:-translate-y-1"/>
@@ -46,20 +47,19 @@ export default function Home() {
               </a>
             </li>
           </ul>
-        </div>
       </header>
       {/* Right Side */}
-      <main className="lg:min-h-screen lg:overflow-y-auto lg:w-[55%]">
-        <section id="about" className="lg:mr-4">
+      <main className="lg:min-h-screen lg:py-24 lg:overflow-y-auto lg:w-[55%]">
+        <section id="about" className="mb-10">
           <hgroup>
-            <h2 className="ml-8 text-lg lg:hidden">About</h2>
-            <div className="mt-10 lg:mt-20 my-4 mx-8 text-subtle">
+            <h2 className="lg:ml-8 lg:mb-4 mb-8 text-lg font-bold">About</h2>
+            <div className="my-4 lg:mx-8 text-subtle text-md">
               <p>{testText}</p>
             </div>
           </hgroup>    
         </section>
-        <section id="experiences" className="lg:mr-4">
-          <h2 className="ml-8 text-lg lg:hidden">Experience</h2>
+        <section id="experiences">
+          <h2 className="lg:ml-8 lg:mb-4 mb-8 text-lg font-bold">Experience</h2>
           {experiences.map((experience, index )=> (
             <ExperienceCard key={index} experience={experience} />
           ))}
