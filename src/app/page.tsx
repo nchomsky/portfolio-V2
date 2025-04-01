@@ -21,10 +21,10 @@ const testText = `I’m a developer passionate about creating software that is
 
 export default function Home() {
   return (
-    <div className="flex flex-col lg:flex-row lg:gap-4 mx-auto max-w-screen-xl lg:py-0 py-12 md:px-4">
+    <div className="flex flex-col lg:flex-row lg:gap-4 mx-auto max-w-screen-xl lg:py-0 py-12 px-10">
       <Particles quantity={300} className="absolute -z-10 inset-0"/>
       {/* Left Side */}
-      <header className="lg:h-screen lg:py-24 lg:sticky lg:top-0 lg:flex lg:flex-col lg:w-[45%]">
+      <header className="lg:h-screen lg:py-24 lg:sticky lg:top-0 lg:flex lg:flex-col lg:w-[45%] lg:justify-between">
           <div>
             <h1 className="text-4xl mb-2 font-bold lg:text-6xl">Noah Chomsky</h1>
             <h2 className="mb-4 text-2xl text-subtle lg:text-3xl ">Software Developer</h2>
