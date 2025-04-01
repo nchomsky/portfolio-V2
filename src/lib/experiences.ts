@@ -63,7 +63,7 @@ const pgImp: Experience = {
 
 const infosys: Experience = {
     company: 'Infosys',
-    position: 'Implementation Specialist',
+    position: 'Associate Software Engineer',
     startDate: 'June 2019',
     endDate: 'June 2020',
     summary: `Developed a Credit Card Application with Angular 7 and JPA for payment management. Presented the project to a company's CTO and earned internal Agile certification`,
