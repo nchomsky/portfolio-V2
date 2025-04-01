@@ -1,9 +1,9 @@
 import ExperienceCard from "@/components/ExperienceCard";
 import Particles from "@/components/Particles";
 import { experiences } from "@/lib/experiences";
-import GitHubIcon from "@/public/icons/githubIcon";
-import LinkedInIcon from "@/public/icons/linkedInIcon";
-import ResumeIcon from "@/public/icons/resumeIcon";
+import GitHubIcon from "../../public/icons/githubIcon";
+import LinkedInIcon from "../../public/icons/linkedInIcon";
+import ResumeIcon from "../../public/icons/resumeIcon";
 
 const testText = `I’m a developer passionate about creating software that is 
             both functional and beautiful. I have experience working with a variety 
@@ -41,7 +41,7 @@ export default function Home() {
               </a>
             </li>
             <li className="mr-4 shrink-0">
-              <a href="" target="_blank">
+              <a href="./NoahChomskyResume.pdf" target="_blank">
                 <ResumeIcon className="fill-subtle hover:fill-secondary hover:cursor-pointer transition duration-300 ease-in-out hover:-translate-y-1"/>
               </a>
             </li>
