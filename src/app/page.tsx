@@ -1,9 +1,9 @@
 import ExperienceCard from "@/components/ExperienceCard";
 import Particles from "@/components/Particles";
 import { experiences } from "@/lib/experiences";
-import GitHubIcon from "../../public/icons/githubIcon";
-import LinkedInIcon from "../../public/icons/linkedInIcon";
-import ResumeIcon from "../../public/icons/resumeIcon";
+import GitHubIcon from "../components/icons/githubIcon";
+import LinkedInIcon from "../components/icons/linkedInIcon";
+import ResumeIcon from "../components/icons/resumeIcon";
 
 const testText = `I’m a developer passionate about creating software that is 
             both functional and beautiful. I have experience working with a variety 
@@ -24,7 +24,7 @@ export default function Home() {
     <div className="flex flex-col lg:flex-row mx-auto max-w-screen-xl px-6 md:px-12 my-16">
       <Particles quantity={300} className="absolute -z-10 inset-0"/>
       {/* Left Side */}
-      <div className="lg:h-screen lg:sticky lg:top-0 lg:w-[45%]">
+      <header className="lg:h-screen lg:sticky lg:top-0 lg:w-[45%]">
         <div className="lg:my-20">
           <h1 className="text-4xl mb-2 font-bold lg:text-5xl">Noah Chomsky</h1>
           <h2 className="mb-4 text-2xl text-subtle lg:text-3xl ">Software Developer</h2>
@@ -47,14 +47,16 @@ export default function Home() {
             </li>
           </ul>
         </div>
-      </div>
+      </header>
       {/* Right Side */}
-      <div className="lg:min-h-screen lg:overflow-y-auto lg:w-[55%]">
+      <main className="lg:min-h-screen lg:overflow-y-auto lg:w-[55%]">
         <section id="about" className="lg:mr-4">
-        <h2 className="ml-8 text-lg lg:hidden">About</h2>
-          <div className="mt-10 lg:mt-20 my-4 mx-8 text-subtle">
-            <p>{testText}</p>
-          </div>
+          <hgroup>
+            <h2 className="ml-8 text-lg lg:hidden">About</h2>
+            <div className="mt-10 lg:mt-20 my-4 mx-8 text-subtle">
+              <p>{testText}</p>
+            </div>
+          </hgroup>    
         </section>
         <section id="experiences" className="lg:mr-4">
           <h2 className="ml-8 text-lg lg:hidden">Experience</h2>
@@ -62,7 +64,7 @@ export default function Home() {
             <ExperienceCard key={index} experience={experience} />
           ))}
         </section>
-      </div>
+      </main>
     </div>
   );
 }
