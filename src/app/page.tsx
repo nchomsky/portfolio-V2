@@ -22,14 +22,14 @@ const testText = `I’m a developer passionate about creating software that is
 export default function Home() {
   return (
     <div className="flex flex-col lg:flex-row lg:gap-4 mx-auto max-w-screen-xl lg:py-0 py-12 px-10">
-      <Particles quantity={300} className="absolute -z-10 inset-0"/>
+      <Particles quantity={400} className="-z-10 inset-0 fixed"/>
       {/* Left Side */}
       <header className="lg:h-screen lg:py-24 lg:sticky lg:top-0 lg:flex lg:flex-col lg:w-[45%] lg:justify-between">
           <div>
             <h1 className="text-4xl mb-2 font-bold lg:text-6xl">Noah Chomsky</h1>
             <h2 className="mb-4 text-2xl text-subtle lg:text-3xl ">Software Developer</h2>
           </div>
-          {/* Add LinkedIn, GitHub, and Resume Icons */}
+          {/* Social Icons (LinkedIn, GitHub, Resume) */}
           <ul aria-label="Social Media List" className="flex items-end justify-between w-29">
             <li>
               <a href="https://www.linkedin.com/in/nchomsky/" target="_blank" rel="noopener noreferrer" aria-label="Button that opens LinkedIn Profile in a new tab">
