@@ -30,19 +30,19 @@ export default function Home() {
             <h2 className="mb-4 text-2xl text-subtle lg:text-3xl ">Software Developer</h2>
           </div>
           {/* Add LinkedIn, GitHub, and Resume Icons */}
-          <ul aria-label="Social Media List" className="flex">
-            <li className="mr-4 shrink-0">
-              <a href="https://www.linkedin.com/in/nchomsky/" target="_blank">
+          <ul aria-label="Social Media List" className="flex items-end justify-between w-29">
+            <li>
+              <a href="https://www.linkedin.com/in/nchomsky/" target="_blank" rel="noopener noreferrer" aria-label="Button that opens LinkedIn Profile in a new tab">
                 <LinkedInIcon className="fill-subtle hover:fill-secondary hover:cursor-pointer transition duration-300 ease-in-out hover:-translate-y-1"/>
               </a>
             </li>
-            <li className="mr-4 shrink-0">
-              <a href="https://github.com/nchomsky" target="_blank">
+            <li className="scale-125">
+              <a href="https://github.com/nchomsky" target="_blank" rel="noopener noreferrer" aria-label="Button that opens GitHub Profile in a new tab">
                 <GitHubIcon className="fill-subtle hover:fill-secondary hover:cursor-pointer transition duration-300 ease-in-out hover:-translate-y-1"/>
               </a>
             </li>
-            <li className="mr-4 shrink-0">
-              <a href="./NoahChomskyResume.pdf" target="_blank">
+            <li>
+              <a href="./NoahChomskyResume.pdf" target="_blank" rel="noopener noreferrer" aria-label="Button that opens Resume in a new tab">
                 <ResumeIcon className="fill-subtle hover:fill-secondary hover:cursor-pointer transition duration-300 ease-in-out hover:-translate-y-1"/>
               </a>
             </li>
