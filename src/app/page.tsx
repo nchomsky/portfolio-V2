@@ -9,7 +9,7 @@ import About from "./about";
 export default function Home() {
   return (
     <div className="flex flex-col lg:flex-row lg:gap-4 mx-auto max-w-screen-xl lg:py-0 py-12 px-10">
-      <Particles quantity={350} className="-z-10 inset-0 fixed"/>
+      <Particles quantity={300} className="-z-10 inset-0 fixed"/>
       {/* Left Side */}
       <header className="lg:h-screen lg:py-24 lg:sticky lg:top-0 lg:flex lg:flex-col lg:w-[45%] lg:justify-between lg:mb-0 mb-10">
           <div>
@@ -39,12 +39,12 @@ export default function Home() {
       <main className="lg:min-h-screen lg:py-24 lg:overflow-y-auto lg:w-[55%]">
         <section id="about" className="mb-10">
           <hgroup>
-            <h2 className="lg:ml-8 lg:mb-4 mb-8 text-lg font-bold">About</h2>
+            <h2 className="lg:ml-6 mb-6 text-lg font-bold">About</h2>
             <About />
           </hgroup>    
         </section>
         <section id="experiences">
-          <h2 className="lg:ml-8 lg:mb-4 mb-8 text-lg font-bold">Experience</h2>
+          <h2 className="lg:ml-6 text-lg font-bold">Experience</h2>
           {experiences.map((experience, index )=> (
             <ExperienceCard key={index} experience={experience} />
           ))}

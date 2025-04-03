@@ -5,12 +5,12 @@ import Tag from './Tag';
 const ExperienceCard = ({ experience } : { experience : Experience }) => {
   
     return (
-            <div className="group mt-2 md:flex lg:p-8 rounded-lg lg:hover:inset-shadow-md lg:hover:bg-comp-bg/50">
-                <p className="text-xs text-subtle font-semibold lg:w-1/4">{experience.startDate} - {experience.endDate}</p>
-                <div className="lg:w-3/4">
-                    <h3 className=" font-bold antialiased lg:group-hover:text-accent">{experience.company} - {experience.position}</h3>
-                    <p className="mt-2 text-secondary text-sm/6">{experience.summary}</p>
-                    <ul className="mt-2 flex flex-wrap">
+            <div className="group md:flex mt-6 lg:p-6 rounded-lg transition duration-300 ease-in-out lg:hover:bg-comp-bg/50 lg:hover:drop-shadow-lg">
+                <header className="text-xs text-subtle font-semibold md:w-1/4 pr-1 pt-1 tracking-wide mb-3">{experience.startDate} - {experience.endDate}</header>
+                <div className="md:w-3/4">
+                    <h3 className="md:text-lg text-sm font-bold antialiased transition duration-300 ease-in-out lg:group-hover:text-accent">{experience.company} - {experience.position}</h3>
+                    <p className="pt-2 text-secondary md:text-sm/6 text-xs/5 font-semibold tracking-wide">{experience.summary}</p>
+                    <ul className="pt-2 flex flex-wrap">
                         {experience.skills.map(skill => (
                         <Tag key={skill} text={skill}/>
                         ))}

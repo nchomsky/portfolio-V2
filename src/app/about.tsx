@@ -6,7 +6,7 @@ const paragraph4 = `Whenever I have free time, you can find me rock climbing, su
 
 const About = () => {
     return (
-        <div className="my-4 lg:mx-8 text-subtle text-sm font-semibold tracking-wide">
+        <div className="my-4 lg:mx-6 text-subtle md:text-sm text-xs font-semibold tracking-wide">
             <p>{paragraph1}</p>
             <br />
             <p>{paragraph2}</p>
