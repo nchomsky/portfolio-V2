@@ -1,10 +1,12 @@
 import ExperienceCard from "@/components/ExperienceCard";
 import Particles from "@/components/Particles";
-import { experiences } from "@/lib/experiences";
 import GitHubIcon from "../components/icons/githubIcon";
 import LinkedInIcon from "../components/icons/linkedInIcon";
 import ResumeIcon from "../components/icons/resumeIcon";
+import ProjectCard from "@/components/ProjectCard";
 import About from "./about";
+import { experiences } from "@/lib/experiences";
+import { projects } from "@/lib/projects";
 
 export default function Home() {
   return (
@@ -43,10 +45,16 @@ export default function Home() {
             <About />
           </hgroup>    
         </section>
-        <section id="experiences">
+        <section id="experiences" className="mb-10">
           <h2 className="lg:ml-6 text-lg font-bold">Experience</h2>
           {experiences.map((experience, index )=> (
             <ExperienceCard key={index} experience={experience} />
+          ))}
+        </section>
+        <section id="projects">
+          <h2 className="lg:ml-6 text-lg font-bold">Projects</h2>
+          {projects.map((project, index )=> (
+            <ProjectCard key={index} project={project} />
           ))}
         </section>
       </main>

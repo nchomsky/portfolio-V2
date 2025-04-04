@@ -1,7 +1,6 @@
-import Experience from '@/lib/types'; 
+import { Experience } from '@/lib/types'; 
 import Tag from './Tag';
 
-// Maybe turn this into a generic card component once I have projects included as well...
 const ExperienceCard = ({ experience } : { experience : Experience }) => {
   
     return (
