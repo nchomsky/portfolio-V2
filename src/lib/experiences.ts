@@ -4,7 +4,7 @@ const apple: Experience = {
     company: 'Contractor at Apple Inc.',
     position: 'Software Developer',
     startDate: 'April 2023',
-    endDate: 'Present',
+    endDate: 'April 2025',
     summary: `Collaborated with two developers to build an application using Next.js to efficiently serve documents from various GitHub repositories. Additionally, I worked with a team to build a tool used by SREs to resolve issues, view reports, and gain insights into service health and reliability. As part of this effort, I led a major refactor of the app's permission management system.`,
     skills: [
         'React', 
