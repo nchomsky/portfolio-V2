@@ -7,6 +7,7 @@ import ProjectCard from "@/components/ProjectCard";
 import About from "./about";
 import { experiences } from "@/lib/experiences";
 import { projects } from "@/lib/projects";
+import TextHighlight from "@/components/TextHighlight";
 
 export default function Home() {
   return (
@@ -57,6 +58,9 @@ export default function Home() {
             <ProjectCard key={index} project={project} />
           ))}
         </section>
+        <footer className="max-w-lg lg:ml-6 mt-15 mb:10">
+          <p className="text-subtle text-sm font-semibold tracking-wide ">Wireframed using <TextHighlight>Figma</TextHighlight>. Built with <TextHighlight>Next.js</TextHighlight>, <TextHighlight>TypeScript</TextHighlight>, and <TextHighlight>Tailwind CSS</TextHighlight>. Deployed with <TextHighlight>Vercel</TextHighlight>.</p>
+        </footer>
       </main>
     </div>
   );
